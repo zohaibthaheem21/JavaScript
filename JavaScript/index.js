@@ -952,16 +952,106 @@
 
 // callback function
 // 
-const add = (a,b) => {
-    return a+b;
-}
-const subs = (a,b) => {
-    return a-b;
-}
+// const add = (a,b) => {
+//     return a+b;
+// }
+// const subs = (a,b) => {
+//     return a-b;
+// }
 
-const calculator = (num1,num2,operator) => {
-    return operator(num1,num2);
-}
-// higher order function
-calculator(5,2,add)
-console.log(calculator(5,2,add));
+// const calculator = (num1,num2,operator) => {
+//     return operator(num1,num2);
+// }
+// // higher order function
+// calculator(5,2,add)
+// console.log(calculator(5,2,add));
+
+
+
+
+// 23
+
+
+// means inner function can access all the variables of it's parent function and global variables that property is called lexical scoping.
+// but its vice-versa is not possible
+// let  a = "Hello guys"; // global scope
+// const first = () => {
+//     let b = " Hello";
+//     const second = () => {
+//         let c = " Hi";
+//         console.log(a+b+c);
+//     }
+//     second();
+//     // console.log(a+b+c); // I can't use c here
+// }
+// first();
+
+
+
+// What is Closures in JavaScript
+// It is a combination of a bundled together (encclosed) with references to its surrounding state
+// (the lexical environment).
+
+
+
+// use strict
+// "use strict"
+// var x = "zohaib";
+// console.log(x);
+
+
+// Difference between Sychronous and Asynchronous
+
+// Sychronous
+// const fun2 = () => {
+//     console.log(`Function 2 is called`);
+// }
+// const fun1 = () => {
+//     console.log(`Function 1 is called`);
+//     fun2();
+//     console.log(`Function 1 is called again`);
+// }
+// fun1();
+
+
+// Asynchronous
+// const fun2 = () => {
+//     setTimeout(() => {
+//         console.log(`Function 2 is called`);
+//     },2000);
+// }
+// const fun1 = () => {
+//     console.log(`Function 1 is called`);
+//     fun2();
+//     console.log(`Function 1 is called again`);
+// }
+// fun1();
+
+
+
+
+// 24
+
+// Function Curring
+// sum(5)(3)(8)
+// function sum(num1) {
+//     console.log(num1);
+// }
+// sum(5);
+
+// function sum(num1) {
+//     // console.log(num1);
+//     return function(num2) {
+//         // console.log(num1,num2);
+//         return function(num3) {
+//             console.log(num1,num2,num3);
+//         }
+//     }
+// }
+
+// const sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3);
+
+
+// sum(5)(3)(8);
+
+// callBack Hell
