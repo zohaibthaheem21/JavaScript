@@ -1,0 +1,2 @@
+# JavaScript
+learning of JavaScript
