@@ -1,4 +1,4 @@
-// 0
+ // 0
 // console.log("Hello World with JavaScript");
 
 
@@ -31,7 +31,7 @@
 // var iAmHassan = false;
 // console.log(iAmHassan);
 
-// // type of operator
+// // typeof operator
 // console.log(typeof(myName));
 // console.log(typeof(myAge));
 // console.log(typeof(iAmThaheem));
@@ -153,6 +153,7 @@
 // console.log(3**3);
 // console.log(21+"21");
 // console.log(21+"Zohaib");
+// console.log(10 ** -1); // 1/10
 
 // swap two numbers
 // var a = 21;
@@ -205,10 +206,20 @@
 // }
 
 // Condition (ternary) operator
+// variableName = (condition) ? value1 : value2;
 // which takes only 3 operands
 
 // var a = 6;
 // console.log((a <= 5) ? "yes" : "no");
+
+// falsy values in JavaScript
+// 0, null, undefined, NaN, false
+
+// if (0) {
+//     console.log("Ufff! we loss the match");
+// } else {
+//     console.log("Yes! we won the match");
+// }
 
 
 // Switch Statement
@@ -264,8 +275,16 @@
 
 // 8
 // Function
+// block of code design to perform a particular task
 
-// functiond definition
+// functiond definition, function declaration
+// before using it we have to define a function
+
+// syntax
+// function functionName() {
+//     // block of code // statement
+// }
+
 // function sum() {
 //     var a=10,b=20;
 //     var total=a+b;
@@ -276,16 +295,23 @@
 // sum();
 
 // function parameter
-// function sum(a,b) {
+// function sum(a,b) {  // a and b are parameters
 //     var total=a+b;
 //     console.log(total);
 // }
 
 // sum();
-// sum(20,30);
+// sum(20,30);  // 20 and 30 are arguments
 // sum(50,50);
 
+// why function?
+// resuse code
+// define once and use it many times
+// call at any where
+
 // function expressions
+// create a function and put it into a variable
+
 // function sum(a,b) {
 //     var total=a+b;
 //     console.log(total);
@@ -297,7 +323,6 @@
 // return keyword
 // function sum(a,b) {
 //     return total=a+b;
-    
 // }
 
 // var funEx = sum(2,3);
